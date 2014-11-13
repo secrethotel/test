@@ -4,6 +4,8 @@
 
 define(function(require, exports, module) {
     var elementCreate = require("./elementCreate");
+    var ajax = require("./ajax.js");
+    
     var overlay = (function() {
         var element = elementCreate.create("div", {
             styles: {

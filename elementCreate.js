@@ -22,7 +22,7 @@ define(function(require, exports) {
                         if (keyAttr === "class") {
                             keyAttr = "className";
                         }
-                        element[keyAttr] = attr[keyAttr]attr["class"];
+                        element[keyAttr] = attr["class"];
                     }
                     
                 }

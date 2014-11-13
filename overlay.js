@@ -5,19 +5,17 @@ define(function(require, exports, module) {
   	var element = elementCreate.create("div", {
   		styles: {
   			display: "none",
-            width: "100%",
-            backgroundColor: "#000",
-            opacity: 0.35,
-            position: "absolute",
-            zIndex: 1,
-            left: 0,
-            top: 0,
-            bottom: 0
+        width: "100%",
+        backgroundColor: "#000",
+        opacity: 0.35,
+        position: "absolute",
+        zIndex: 1,
+        left: 0,
+        top: 0,
+        bottom: 0
   		}
   	})
   })
 
 
-
-  
 });

@@ -1,5 +1,5 @@
 /**
- * 黑色半透明遮罩层
+ * 黑色半透明
  */
 
 define(function(require, exports, module) {

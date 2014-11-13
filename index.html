@@ -5,8 +5,24 @@
 	<title>Document</title>
 </head>
 <body>
+	<style>
+button{
+	margin:1em;
+	position:relative;
+	z-index: 2;
+}
+	</style>
+<button id="button">点击toggle</button>
 
-	<script src="script/sea-debug.js"></script>
-	<script src="overlay.js"></script>
+<script src="script/sea-debug.js"></script>
+<script>
+	var myOverlay = null;
+	seajs.use('./overlay.js',function(overlay){
+		myOverlay = overlay.overlay;
+	})
+	document.getElementById('button').onclick = function(){
+		myOverlay[myOverlay.display ? 'hide':'show']()
+	}
+</script>
 </body>
 </html>

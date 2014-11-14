@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<style>
-button{
-	margin:1em;
-	position:relative;
-	z-index: 2;
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="description" content="seajs spm使用测试之简易弹框实现 » 张鑫旭-鑫空间-鑫生活" />
+<meta name="description" content="seajs spm使用测试之简易弹框实现之实例页面" />
+<meta name="keywords" content="seajs, spm, node.js, nodejs" />
+<meta name="author" content="张鑫旭, zhangxixnu" />
+<title>seajs使用测试之简易弹框实现 &raquo; 张鑫旭-鑫空间-鑫生活</title>
+<style>
+.box {
+	width: 256px;
+	height: 193px;
+	padding: .5em;
 }
-	</style>
-<button id="button">点击toggle</button>
+a img {
+	border: 0;
+}
+</style>
+</head>
 
-<script src="script/sea-debug.js"></script>
+<body>
+<a href="beLoaded.html" id="test" title="点击查看大图">
+	click here
+</a>
+<script src="script/sea.js"></script>
 <script>
-	var myOverlay = null;
-	seajs.use('./overlay.js',function(overlay){
-		myOverlay = overlay.overlay;
-	})
-	document.getElementById('button').onclick = function(){
-		myOverlay[myOverlay.display ? 'hide':'show']()
-	}
+seajs.use("./main.js", function(test) {
+	test.bind(document.getElementById("test"));
+});
 </script>
 </body>
 </html>
